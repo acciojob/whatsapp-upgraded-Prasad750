@@ -139,7 +139,7 @@ public class WhatsappRepository {
     public int removeUser(User user) throws Exception {
 
         Group group=null;
-        for(String grp:groupDb.keySet())
+        for(String grp:groupMemberListDb.keySet())
         {
             if(groupMemberListDb.get(grp).contains(user));
             {
